@@ -39,7 +39,7 @@ module.exports = function(grunt) {
             }
         },
         files: {
-          'tmp/*.html': ['test/fixtures/**/*.jade'],
+          'tmp/*/**/*.html': ['test/fixtures/**/*.jade'],
         },
       },
       // custom_options: {

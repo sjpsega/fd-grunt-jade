@@ -62,4 +62,20 @@ exports.fd_grunt_jade = {
 
     test.done();
   },
+  test5: function(test) {
+    test.expect(1);
+
+    test.ok(!grunt.file.exists("tmp/include/content.html"),'content.html not complie');
+
+    test.done();
+  },
+  test6: function(test) {
+    test.expect(1);
+
+    var actual = _.trim(grunt.file.read('tmp/jadeinclude2.html'));
+    var expected = _.trim(grunt.file.read('test/expected/jadeinclude2.html'));
+    test.equal(actual, expected, 'jadeinclude2.html test');
+
+    test.done();
+  },
 };
