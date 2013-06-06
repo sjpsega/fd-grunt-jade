@@ -9,7 +9,6 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 ## 编译规则
 
 * 默认每个jade文件都会编译成html文件，除非在头部注释中出现"!!cmd:jadebuild=false"字样
-* 编译出来的html文件头中会加入“compile by jade”的注释
 
 ## The "fd_grunt_jade" task
 
